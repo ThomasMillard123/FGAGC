@@ -1,4 +1,7 @@
+#include<random>
+
 #include "Application.h"
+#include "Model.h"
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -39,6 +42,7 @@ Application::Application()
 	_pVertexBuffer = nullptr;
 	_pIndexBuffer = nullptr;
 	_pConstantBuffer = nullptr;
+	
 }
 
 Application::~Application()
@@ -48,6 +52,7 @@ Application::~Application()
 
 HRESULT Application::Initialise(HINSTANCE hInstance, int nCmdShow)
 {
+	
     if (FAILED(InitWindow(hInstance, nCmdShow)))
 	{
         return E_FAIL;
@@ -69,7 +74,7 @@ HRESULT Application::Initialise(HINSTANCE hInstance, int nCmdShow)
 	XMStoreFloat4x4(&_world, XMMatrixIdentity());
 
     // Initialize the view matrix
-	XMVECTOR Eye = XMVectorSet(0.0f, 0.0f, -3.0f, 0.0f);
+	XMVECTOR Eye = XMVectorSet(0.0f, 0.0f, -10.0f, 0.0f);
 	XMVECTOR At = XMVectorSet(0.0f, 0.0f, 0.0f, 0.0f);
 	XMVECTOR Up = XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f);
 
@@ -77,7 +82,7 @@ HRESULT Application::Initialise(HINSTANCE hInstance, int nCmdShow)
 
     // Initialize the projection matrix
 	XMStoreFloat4x4(&_projection, XMMatrixPerspectiveFovLH(XM_PIDIV2, _WindowWidth / (FLOAT) _WindowHeight, 0.01f, 100.0f));
-
+	
 	return S_OK;
 }
 
@@ -148,21 +153,29 @@ HRESULT Application::InitShadersAndInputLayout()
 
 HRESULT Application::InitVertexBuffer()
 {
+	/*cube[0]->InitVertexBuffer(_pd3dDevice, _pVertexBuffer);*/
 	HRESULT hr;
 
     // Create vertex buffer
     SimpleVertex vertices[] =
     {
-        { XMFLOAT3( -1.0f, 1.0f, 0.0f ), XMFLOAT4( 0.0f, 0.0f, 1.0f, 1.0f ) },
-        { XMFLOAT3( 1.0f, 1.0f, 0.0f ), XMFLOAT4( 0.0f, 1.0f, 0.0f, 1.0f ) },
-        { XMFLOAT3( -1.0f, -1.0f, 0.0f ), XMFLOAT4( 0.0f, 1.0f, 1.0f, 1.0f ) },
-        { XMFLOAT3( 1.0f, -1.0f, 0.0f ), XMFLOAT4( 1.0f, 0.0f, 0.0f, 1.0f ) },
+        { XMFLOAT3( -1.0f, 1.0f, -1.0f ), XMFLOAT4( 0.0f, 0.0f, 1.0f, 1.0f ) },
+        { XMFLOAT3( 1.0f, 1.0f, -1.0f ), XMFLOAT4( 0.0f, 1.0f, 0.0f, 1.0f ) },
+        { XMFLOAT3( -1.0f, -1.0f, -1.0f ), XMFLOAT4( 1.0f, 0.0f, 0.0f, 1.0f ) },
+        { XMFLOAT3( 1.0f, -1.0f, -1.0f ), XMFLOAT4( 1.0f, 1.0f, 1.0f, 1.0f ) },
+
+		{ XMFLOAT3(-1.0f, 1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f, 1.0f, 1.0f) },
+		{ XMFLOAT3(1.0f, 1.0f, 1.0f), XMFLOAT4(1.0f, 1.0f, 0.0f, 1.0f) },
+
+		{ XMFLOAT3(-1.0f, -1.0f, 1.0f), XMFLOAT4(1.0f, 1.0f, 0.0f, 1.0f) },
+		{ XMFLOAT3(1.0f, -1.0f, 1.0f), XMFLOAT4(1.0f, 1.0f, 0.0f, 1.0f) },
+
     };
 
     D3D11_BUFFER_DESC bd;
 	ZeroMemory(&bd, sizeof(bd));
     bd.Usage = D3D11_USAGE_DEFAULT;
-    bd.ByteWidth = sizeof(SimpleVertex) * 4;
+    bd.ByteWidth = sizeof(SimpleVertex) * 8;
     bd.BindFlags = D3D11_BIND_VERTEX_BUFFER;
 	bd.CPUAccessFlags = 0;
 
@@ -175,25 +188,37 @@ HRESULT Application::InitVertexBuffer()
     if (FAILED(hr))
         return hr;
 
-	return S_OK;
+   return S_OK;
 }
 
 HRESULT Application::InitIndexBuffer()
 {
+	
 	HRESULT hr;
 
     // Create index buffer
     WORD indices[] =
     {
-        0,1,2,
-        2,1,3,
+		0, 1, 2,    // front
+		2, 1, 3,
+		4, 0, 6,    // left
+		6, 0, 2,
+		7, 5, 6,    // back
+		6, 5, 4,
+		3, 1, 7,    // right
+		7, 1, 5,
+		4, 5, 0,    // top
+		0, 5, 1,
+		3, 7, 2,    // bot
+		2, 7, 6,
+		
     };
 
 	D3D11_BUFFER_DESC bd;
 	ZeroMemory(&bd, sizeof(bd));
 
     bd.Usage = D3D11_USAGE_DEFAULT;
-    bd.ByteWidth = sizeof(WORD) * 6;     
+    bd.ByteWidth = sizeof(WORD) * 36;     
     bd.BindFlags = D3D11_BIND_INDEX_BUFFER;
 	bd.CPUAccessFlags = 0;
 
@@ -229,7 +254,7 @@ HRESULT Application::InitWindow(HINSTANCE hInstance, int nCmdShow)
 
     // Create window
     _hInst = hInstance;
-    RECT rc = {0, 0, 640, 480};
+    RECT rc = {0, 0, 2000, 1000};
     AdjustWindowRect(&rc, WS_OVERLAPPEDWINDOW, FALSE);
     _hWnd = CreateWindow(L"TutorialWindowClass", L"DX11 Framework", WS_OVERLAPPEDWINDOW,
                          CW_USEDEFAULT, CW_USEDEFAULT, rc.right - rc.left, rc.bottom - rc.top, nullptr, nullptr, hInstance,
@@ -302,6 +327,7 @@ HRESULT Application::InitDevice()
 
 	UINT numFeatureLevels = ARRAYSIZE(featureLevels);
 
+	
     DXGI_SWAP_CHAIN_DESC sd;
     ZeroMemory(&sd, sizeof(sd));
     sd.BufferCount = 1;
@@ -340,9 +366,24 @@ HRESULT Application::InitDevice()
 
     if (FAILED(hr))
         return hr;
+D3D11_TEXTURE2D_DESC depthStencilDesc;
 
-    _pImmediateContext->OMSetRenderTargets(1, &_pRenderTargetView, nullptr);
+	depthStencilDesc.Width = _WindowWidth;
+	depthStencilDesc.Height = _WindowHeight;
+	depthStencilDesc.MipLevels = 1;
+	depthStencilDesc.ArraySize = 1;
+	depthStencilDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+	depthStencilDesc.SampleDesc.Count = 1;
+	depthStencilDesc.SampleDesc.Quality = 0;
+	depthStencilDesc.Usage = D3D11_USAGE_DEFAULT;
+	depthStencilDesc.BindFlags = D3D11_BIND_DEPTH_STENCIL;
+	depthStencilDesc.CPUAccessFlags = 0;
+	depthStencilDesc.MiscFlags = 0;
 
+	hr=_pd3dDevice->CreateTexture2D(&depthStencilDesc, nullptr, &_depthStencilBuffer);
+	hr=_pd3dDevice->CreateDepthStencilView(_depthStencilBuffer, nullptr, &_depthStencilView);
+    _pImmediateContext->OMSetRenderTargets(1, &_pRenderTargetView, _depthStencilView);
+	
     // Setup the viewport
     D3D11_VIEWPORT vp;
     vp.Width = (FLOAT)_WindowWidth;
@@ -353,8 +394,21 @@ HRESULT Application::InitDevice()
     vp.TopLeftY = 0;
     _pImmediateContext->RSSetViewports(1, &vp);
 
-	InitShadersAndInputLayout();
+	D3D11_RASTERIZER_DESC wfdesc;
+	ZeroMemory(&wfdesc, sizeof(D3D11_RASTERIZER_DESC));
+	wfdesc.FillMode = D3D11_FILL_WIREFRAME;
+	wfdesc.CullMode = D3D11_CULL_NONE;
+	hr = _pd3dDevice->CreateRasterizerState(&wfdesc, &_wireFrame);
+	
+	ZeroMemory(&wfdesc, sizeof(D3D11_RASTERIZER_DESC));
+	wfdesc.FillMode = D3D11_FILL_SOLID;
+	wfdesc.CullMode = D3D11_CULL_BACK;
+	hr = _pd3dDevice->CreateRasterizerState(&wfdesc, &_SolidFill);
 
+	_pImmediateContext->RSSetState(_SolidFill);
+
+	InitShadersAndInputLayout();
+	
 	InitVertexBuffer();
 
     // Set vertex buffer
@@ -378,7 +432,14 @@ HRESULT Application::InitDevice()
 	bd.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
 	bd.CPUAccessFlags = 0;
     hr = _pd3dDevice->CreateBuffer(&bd, nullptr, &_pConstantBuffer);
-
+	Planet1 = new Planet(_pConstantBuffer, _pImmediateContext, _pVertexShader, _pPixelShader, 0, 0, 0);
+	for (int i = 0; i < 101; i++)
+	{
+		Model* cubeA=new Satellite(_pConstantBuffer, _pImmediateContext, _pVertexShader, _pPixelShader,RandNumber(), RandNumber(), RandNumber());
+		cube.push_back(cubeA);
+		
+	}
+	
     if (FAILED(hr))
         return hr;
 
@@ -399,13 +460,19 @@ void Application::Cleanup()
     if (_pSwapChain) _pSwapChain->Release();
     if (_pImmediateContext) _pImmediateContext->Release();
     if (_pd3dDevice) _pd3dDevice->Release();
+
+	if (_depthStencilView) _depthStencilView->Release();
+	if (_depthStencilBuffer) _depthStencilBuffer->Release();
+
+	if (_wireFrame)_wireFrame->Release();
+
 }
 
 void Application::Update()
 {
     // Update our time
     static float t = 0.0f;
-
+	
     if (_driverType == D3D_DRIVER_TYPE_REFERENCE)
     {
         t += (float) XM_PI * 0.0125f;
@@ -420,11 +487,33 @@ void Application::Update()
 
         t = (dwTimeCur - dwTimeStart) / 1000.0f;
     }
+	
+	
+	ID3D11RasterizerState* _CurrentState;
+	
+	_pImmediateContext->RSGetState(&_CurrentState);
 
+	if (GetAsyncKeyState(VK_UP))
+	{
+		
+		if ( _CurrentState == _SolidFill) {
+			_pImmediateContext->RSSetState(_wireFrame);
+		}else if(_CurrentState==_wireFrame) {
+			_pImmediateContext->RSSetState(_SolidFill);
+		}
+	}
+	
     //
     // Animate the cube
     //
-	XMStoreFloat4x4(&_world, XMMatrixRotationZ(t));
+	//XMMATRIX trasformation= XMMatrixMultiply(XMMatrixRotationZ(t),XMMatrixTranslation(0,0,5));
+	//XMStoreFloat4x4(&_world, trasformation);
+	Planet1->Update(t, true, true, true);
+	for (int i = 0; i < 101; i++)
+	{
+		cube[i]->Update(t, false, true, false);
+	}
+	
 }
 
 void Application::Draw()
@@ -434,31 +523,46 @@ void Application::Draw()
     //
     float ClearColor[4] = {0.0f, 0.125f, 0.3f, 1.0f}; // red,green,blue,alpha
     _pImmediateContext->ClearRenderTargetView(_pRenderTargetView, ClearColor);
+	_pImmediateContext->ClearDepthStencilView(_depthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
+	
+	
+	//XMMATRIX world = XMLoadFloat4x4(&_world);
+	//XMMATRIX view = XMLoadFloat4x4(&_view);
+	//XMMATRIX projection = XMLoadFloat4x4(&_projection);
+ //   //
+ //   // Update variables
+ //   //
+	//
+ //   ConstantBuffer cb;
+	//cb.mWorld = XMMatrixTranspose(world);
+	//cb.mView = XMMatrixTranspose(view);
+	//cb.mProjection = XMMatrixTranspose(projection);
 
-	XMMATRIX world = XMLoadFloat4x4(&_world);
-	XMMATRIX view = XMLoadFloat4x4(&_view);
-	XMMATRIX projection = XMLoadFloat4x4(&_projection);
-    //
-    // Update variables
-    //
-    ConstantBuffer cb;
-	cb.mWorld = XMMatrixTranspose(world);
-	cb.mView = XMMatrixTranspose(view);
-	cb.mProjection = XMMatrixTranspose(projection);
+	//_pImmediateContext->UpdateSubresource(_pConstantBuffer, 0, nullptr, &cb, 0, 0);
 
-	_pImmediateContext->UpdateSubresource(_pConstantBuffer, 0, nullptr, &cb, 0, 0);
+ // Renders a triangle
 
-    //
-    // Renders a triangle
-    //
-	_pImmediateContext->VSSetShader(_pVertexShader, nullptr, 0);
-	_pImmediateContext->VSSetConstantBuffers(0, 1, &_pConstantBuffer);
-    _pImmediateContext->PSSetConstantBuffers(0, 1, &_pConstantBuffer);
-	_pImmediateContext->PSSetShader(_pPixelShader, nullptr, 0);
-	_pImmediateContext->DrawIndexed(6, 0, 0);        
-
+	for (int i = 0; i < 101; i++)
+	{
+		cube[i]->Draw(_view,_projection);
+	}
+	
+	
+	Planet1->Draw(_view, _projection);
+	
     //
     // Present our back buffer to our front buffer
     //
     _pSwapChain->Present(0, 0);
+}
+
+
+
+
+float Application::RandNumber() {
+	std::random_device rd;
+	std::mt19937 mt(rd());
+	std::uniform_int <int> dist(-7, 7);
+	float randint = dist(mt);
+	return randint;
 }

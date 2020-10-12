@@ -377,13 +377,20 @@
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="DX11 Framework.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="Satellite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DX11 Framework.fx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Planet.h" />
     <CLInclude Include="resource.h" />
+    <ClInclude Include="Satellite.h" />
+    <ClInclude Include="Structs.h" />
     <ResourceCompile Include="DX11 Framework.rc" />
   </ItemGroup>
   <ItemGroup>

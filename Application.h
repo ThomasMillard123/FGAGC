@@ -5,22 +5,28 @@
 #include <d3dcompiler.h>
 #include <directxmath.h>
 #include <directxcolors.h>
+#include <vector>
 #include "resource.h"
 
+#include"Structs.h"
+
+#include"Model.h"
+#include"Planet.h"
+#include"Satellite.h"
 using namespace DirectX;
 
-struct SimpleVertex
-{
-    XMFLOAT3 Pos;
-    XMFLOAT4 Color;
-};
+//struct SimpleVertex
+//{
+//    XMFLOAT3 Pos;
+//    XMFLOAT4 Color;
+//};
 
-struct ConstantBuffer
-{
-	XMMATRIX mWorld;
-	XMMATRIX mView;
-	XMMATRIX mProjection;
-};
+//struct ConstantBuffer
+//{
+//	XMMATRIX mWorld;
+//	XMMATRIX mView;
+//	XMMATRIX mProjection;
+//};
 
 class Application
 {
@@ -43,6 +49,15 @@ private:
 	XMFLOAT4X4              _view;
 	XMFLOAT4X4              _projection;
 
+	ID3D11DepthStencilView* _depthStencilView;
+	ID3D11Texture2D* _depthStencilBuffer;
+
+	ID3D11RasterizerState* _wireFrame;
+	ID3D11RasterizerState* _SolidFill;
+	Model* Planet1;
+	std::vector<Model*> cube;
+	
+
 private:
 	HRESULT InitWindow(HINSTANCE hInstance, int nCmdShow);
 	HRESULT InitDevice();
@@ -54,6 +69,8 @@ private:
 
 	UINT _WindowHeight;
 	UINT _WindowWidth;
+
+	float RandNumber();
 
 public:
 	Application();
