@@ -1,0 +1,157 @@
+﻿  Appearance.cpp
+  Application.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Application.cpp(290,25): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'DWORD', possible loss of data
+  CameraManager.cpp
+  DDSTextureLoader.cpp
+  Debug.cpp
+  DX11 Framework.cpp
+  GameObject.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\GameObject.cpp(15,31): warning C4100: 't': unreferenced formal parameter
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\GameObject.cpp(217,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  JsonFilePars.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\JsonFilePars.cpp(17,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\JsonFilePars.cpp(39,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\JsonFilePars.cpp(60,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  LightManager.cpp
+  OBJLoader.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(32,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(145,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(146,51): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(174,48): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(198,54): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(213,61): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(228,52): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(246,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\OBJLoader.cpp(254,44): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+  ObjectBuilder.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(44,54): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(57,62): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(78,37): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(79,47): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(80,47): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(82,37): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(83,47): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(84,39): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(97,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(99,5): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(70,9): message : see declaration of 'i'
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(44,18): warning C4189: 'numMeshVertices': local variable is initialized but not referenced
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(92,9): warning C4189: 'size': local variable is initialized but not referenced
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(166,54): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(167,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(198,37): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(199,47): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(200,47): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(202,37): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(203,47): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(204,39): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(217,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(219,5): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(191,9): message : see declaration of 'i'
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ObjectBuilder.cpp(212,9): warning C4189: 'size': local variable is initialized but not referenced
+  ParticleModel.cpp
+  Screen.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(59,50): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(59,36): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(95,34): warning C4100: 'cb': unreferenced formal parameter
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(106): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(107): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(106,94): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\Screen.cpp(107,106): warning C4238: nonstandard extension used: class rvalue used as lvalue
+  ScreenGameLeveL.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(103): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(134): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(150): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(103,94): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(103,155): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(103,222): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(134,93): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(134,154): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(134,221): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(150,85): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(150,146): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(150,213): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(257,73): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(257,59): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(287,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(374,18): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\algorithm(3433,24): warning C4244: '=': conversion from 'int' to 'char', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenGameLeveL.cpp(229): message : see reference to function template instantiation '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)' being compiled
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=int (__cdecl *)(int)
+          ]
+  ScreenMenu.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(90,73): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(90,59): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(124,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(176): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(178): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(180): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(176,64): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(178,57): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(180,53): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\algorithm(3433,24): warning C4244: '=': conversion from 'int' to 'char', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ScreenMenu.cpp(62): message : see reference to function template instantiation '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)' being compiled
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=int (__cdecl *)(int)
+          ]
+  ShaderManager.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\DX11 Framework 2018\ShaderManager.cpp(54,10): error C3861: 'D3DCompileFromFile': identifier not found
+  Transform.cpp
+  Generating Code...

@@ -1,0 +1,141 @@
+{
+  "Objects": [
+    {
+
+      "File": "Cube",
+      "PosX": -5,
+      "PosY": 0,
+      "PosZ": 0,
+      "RotationX": 0,
+      "RotationY": 0,
+      "RotationZ": 0,
+      "SizeX": 1,
+      "SizeY": 1,
+      "SizeZ": 1
+
+    },
+    {
+      "File": "Mesh/IS7/IS7.obj",
+      "PosX": 0,
+      "PosY": -1,
+      "PosZ": 0,
+      "RotationX": 0,
+      "RotationY": 0,
+      "RotationZ": 0,
+      "SizeX": 1,
+      "SizeY": 1,
+      "SizeZ": 1
+    },
+    {
+      "File": "Mesh/sphere.obj",
+      "PosX": 5,
+      "PosY": 0,
+      "PosZ": 0,
+      "RotationX": 0,
+      "RotationY": 0,
+      "RotationZ": 0,
+      "SizeX": 1,
+      "SizeY": 1,
+      "SizeZ": 1
+    },
+    {
+      "File": "Mesh/sphere.obj",
+      "PosX": 5,
+      "PosY": 0,
+      "PosZ": 0,
+      "RotationX": 0,
+      "RotationY": 0,
+      "RotationZ": 0,
+      "SizeX": 0.5,
+      "SizeY": 0.5,
+      "SizeZ": 0.5
+    },
+    {
+
+      "File": "Pyramid",
+      "PosX": 0,
+      "PosY": 0,
+      "PosZ": -5,
+      "RotationX": 0,
+      "RotationY": 0,
+      "RotationZ": 0,
+      "SizeX": 1,
+      "SizeY": 1,
+      "SizeZ": 1
+
+    }
+
+  ],
+  "Camera": [
+    {
+      "EyeX": 0.0,
+      "EyeY": 5.0,
+      "EyeZ": -10.0,
+      "AtX": 0.0,
+      "AtY": 0.0,
+      "AtZ": 0.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0,
+      "Type": "thirdPerson"
+    },
+    {
+      "EyeX": 0.0,
+      "EyeY": 3.0,
+      "EyeZ": 2.0,
+      "AtX": 0.0,
+      "AtY": 0.0,
+      "AtZ": 1.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0,
+      "Type": "firstPerson"
+    },
+    {
+      "EyeX": 0.0,
+      "EyeY": 4.0,
+      "EyeZ": 0.0,
+      "AtX": 0.0,
+      "AtY": 0.0,
+      "AtZ": 1.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0,
+      "Type": "free"
+    }
+  ],
+  "Lights": [
+    {
+      "PosX": 0,
+      "PosY": 2.0,
+      "PosZ": 0.0,
+      "DiffuseLightX": 1.0,
+      "DiffuseLightY": 1.0,
+      "DiffuseLightZ": 1.0,
+      "AmbientLightX": 0.2,
+      "AmbientLightY": 0.2,
+      "AmbientLightZ": 0.2,
+      "SpecularLightX": 0.1,
+      "SpecularLightY": 0.1,
+      "SpecularLightZ": 0.1
+    },
+    {
+      "PosX": 2.0,
+      "PosY": 0,
+      "PosZ": 0,
+      "DiffuseLightX": 1.0,
+      "DiffuseLightY": 1.0,
+      "DiffuseLightZ": 1.0,
+      "AmbientLightX": 0.2,
+      "AmbientLightY": 0.2,
+      "AmbientLightZ": 0.2,
+      "SpecularLightX": 0.2,
+      "SpecularLightY": 0.2,
+      "SpecularLightZ": 0.2
+    }
+  ],
+  "version": "0.1"
+}
+  
+
+ 
