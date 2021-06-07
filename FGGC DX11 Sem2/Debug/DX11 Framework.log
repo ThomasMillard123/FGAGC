@@ -1,0 +1,39 @@
+﻿  Terrain.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(50,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(79,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(81,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(95,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(97,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(100,40): warning C4244: 'argument': conversion from 'UINT' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(102,40): warning C4244: 'argument': conversion from 'UINT' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(104,46): warning C4244: 'argument': conversion from 'UINT' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(107,46): warning C4244: 'argument': conversion from 'UINT' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(109,40): warning C4244: 'argument': conversion from 'UINT' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(111,46): warning C4244: 'argument': conversion from 'UINT' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=WORD
+          ]
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(66,9): warning C4189: 'NumFaces': local variable is initialized but not referenced
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Terrain.cpp(65,9): warning C4189: 'NumVertices': local variable is initialized but not referenced
+  DX11 Framework.vcxproj -> C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Debug\DX11 Framework.exe

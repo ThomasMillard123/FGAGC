@@ -1,0 +1,21 @@
+﻿  Appearance.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Appearance.cpp(13,31): warning C4100: 't': unreferenced formal parameter
+  Application.cpp
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(180,27): warning C4456: declaration of 'transfrom' hides previous local declaration
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(158,13): message : see declaration of 'transfrom'
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(181,34): warning C4456: declaration of 'particalmodle' hides previous local declaration
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(160,17): message : see declaration of 'particalmodle'
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(480,10): error C3861: 'D3DCompileFromFile': identifier not found
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(719,21): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'DWORD', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(722,37): warning C4244: '=': conversion from 'ULONGLONG' to 'DWORD', possible loss of data
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(845): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Users\rug11\OneDrive - Staffordshire University\2nd year\FGAGC\FGGC Framework Semester 2\Application.cpp(845,91): warning C4238: nonstandard extension used: class rvalue used as lvalue
+  Camera.cpp
+  Main.cpp
+  GameObject.cpp
+  ParticalSystem.cpp
+  ParticleModel.cpp
+  RigidBody.cpp
+  Transform.cpp
+  Vector3.cpp
+  Generating Code...
